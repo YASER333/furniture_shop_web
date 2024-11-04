@@ -1,0 +1,328 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    
+    
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+       
+}
+
+
+header {
+    background: linear-gradient(to right, #3c8dbc, #8a2be2);
+    padding: 1em;
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    margin-bottom: 0.5em;
+}
+ul{
+    text-align: center;
+    }
+
+/* Basic styling for the header */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #333;
+    color: #fff;
+}
+
+/* Styling for the logo */
+.navbar h1 {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+/* Remove list style and add horizontal layout */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+/* Styling for navigation links */
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #555;
+    color: #14c8e7;
+}
+
+/* Responsive design for mobile view */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Initially hide nav links on mobile */
+        flex-direction: column;
+        gap: 0;
+        background: #333;
+        width: 100%;
+    }
+
+    /* Show nav-links when active */
+    .nav-links.active {
+        display: flex;
+    }
+
+    /* Optional burger menu styling */
+    /* Basic styling for the header */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #333;
+    color: #fff;
+}
+
+/* Styling for the logo */
+.navbar h1 {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+/* Remove list style and add horizontal layout */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+/* Styling for navigation links */
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #ffffff;
+}
+
+/* Responsive design for mobile view */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0.5rem;
+    }
+    
+    /* Smaller font sizes for mobile view */
+    .navbar-brand {
+        font-size: 1rem;
+    }
+    
+    .nav-link {
+        font-size: 0.9rem;
+    }
+}
+
+}
+
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.sidebar {
+    width: 100%;
+    padding: 15px;
+    background-color: #f4f4f4;
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.sidebar li img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #000000;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+main h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+main p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+figure {
+    margin: 10px 0;
+    text-align: center;
+}
+
+figure img.scalable-img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 5px;
+}
+
+    
+
+
+footer {
+    background: linear-gradient(to right, #8a2be2, #3c8dbc);
+    text-align: center;
+    padding: 1em;
+    color: white;
+}
+
+/* Contact section styling */
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to right, #ff9966, #ff5e62);
+    padding: 3rem 1rem;
+    color: #fff;
+    text-align: center;
+}
+
+.contact-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.contact-text span {
+    color: #ffe66d;
+}
+
+/* Contact form styling */
+.contact-form {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 2rem;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Input and textarea styling */
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    color: #333;
+    background: #fff;
+    transition: box-shadow 0.3s;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    box-shadow: 0px 0px 8px rgba(255, 150, 100, 0.6);
+}
+
+/* Button styling */
+.contact-form button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    color: #ff5e62;
+    background-color: #ffe66d;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.contact-form button:hover {
+    background-color: #ff5e62;
+    color: #ffe66d;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact {
+        padding: 2rem 1rem;
+    }
+
+    .contact-text h2 {
+        font-size: 2rem;
+    }
+
+    .contact-form input, .contact-form textarea {
+        font-size: 0.9rem;
+    }
+
+    .contact-form button {
+        font-size: 0.9rem;
+    }
+}
+
+/* Responsive Layout */
+@media (min-width: 768px) {
+    .sidebar {
+        width: 25%;
+    }
+
+    .content {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .content .left,
+    .content .right {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        display: flex;
+    }
+}
